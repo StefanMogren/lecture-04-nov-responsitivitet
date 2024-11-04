@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: 3px solid black;
+}
+
+.cards {
+    aspect-ratio: 1;
+}
