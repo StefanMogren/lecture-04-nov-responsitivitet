@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: 3px solid black;
+}
+
+.card-container {
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cards {
+    aspect-ratio: 1;
+    min-width: 200px;
+    max-width: 400px;
+    flex: 1;
+    background-color: antiquewhite;
+}
