@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .wrapper {
@@ -14,12 +15,14 @@ header {
     background-color: #480063;
 }
 
+/* Contains section, main, and aside */
 .content {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
 }
 
+/* Contains articles */
 section {
     display: flex;
     flex-direction: column;
@@ -36,6 +39,7 @@ article {
 main {
     width: 100%;
     height: 8rem;
+    color: black;
 }
 
 aside {
@@ -50,4 +54,54 @@ footer {
     height: 8rem;
     width: 100%;
     margin-top: 0.5rem;
+}
+
+
+/* iPad screen resolution */
+@media screen and (min-width: 749px) {
+    .wrapper {
+        width: 750px;
+        min-width: 90%;
+        margin: auto;
+        border: 2px solid black;
+        padding: 0.5rem;
+    }
+    
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    section {
+        width: 40%;
+    }
+
+    main {
+        width: 50%;
+        height: inherit;
+    }
+    
+}
+
+/* Desktop screen resolution */
+@media screen and (min-width: 1016px) {
+    .wrapper {
+        width: 1000px;
+    }
+    
+    section {
+        width: 25%;
+    }
+    
+    main {
+        width: 35%;
+    }
+    
+    aside {
+        width: 25%;
+        height: inherit;
+    }
+    
 }
