@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 .wrapper {
@@ -54,4 +55,19 @@ footer {
     height: 8rem;
     width: 100%;
     margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+    ul {
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    article {
+        flex: none;
+    }
+
 }
