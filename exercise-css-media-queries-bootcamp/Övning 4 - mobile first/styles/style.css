@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Contains header, .content-wrapper, and footer */
 .wrapper {
     width: 100px;
     min-width: 90%;
@@ -18,6 +19,7 @@ header {
     background-color: #480063;
 }
 
+/* Contains figure, section article, and button */
 .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -35,6 +37,7 @@ figure {
 section {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     width: 100%;
 }
 
@@ -42,7 +45,6 @@ article {
     width: 100%;
     height: 6rem;
     background-color: #FD96A9;
-    margin-bottom: .5rem;
 }
 
 article:nth-child(2n) {
@@ -55,11 +57,47 @@ button {
     background-color: #F42DAC;
     border: none;
     border-radius: 4rem;
+    margin: 0.5rem 0;
 }
 
 footer {
     background-color: #C1C99A;
     height: 8rem;
     width: 100%;
-    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    /* Contains figure, section article, and button */
+    .content-wrapper {
+        padding: 0 1rem;
+    }
+    
+    figure {
+        margin: 2rem 0;
+        align-self: flex-start;
+    }
+    
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    article {
+        flex: 45%;
+    }
+    
+    article:nth-child(1) {
+        background-color: #B2008A;
+    }
+    
+    article:nth-child(2) {
+        background-color: #FD96A9;
+    }
+    
+    button {
+        margin: 3rem 0;
+        width: 18rem;
+        border-radius: 1.5rem;
+    }
 }
